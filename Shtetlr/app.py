@@ -139,13 +139,13 @@ def facebook_authorized(resp):
 #     return render_template("verified.html")
 
 
-@app.route("listings1")
+@app.route("/listings1")
 def listings1():
     return render_template("listings1.html")
 
 
-@app.route("listings2")
-def listings1():
+@app.route("/listings2")
+def listings2():
     return render_template("listings2.html")
 
 
@@ -155,17 +155,17 @@ def listings3():
 
 
 @app.route("/listings4")
-def listings1():
+def listings4():
     return render_template("listings4.html")
 
 
 @app.route("/listings5")
-def listings1():
+def listings5():
     return render_template("listings5.html")
 
 
-@app.route("listings6")
-def listings1():
+@app.route("/listings6")
+def listings6():
     return render_template("listings6.html")
 
 
