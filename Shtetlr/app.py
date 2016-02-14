@@ -169,5 +169,31 @@ def listings6():
     return render_template("listings6.html")
 
 
+@app.route("/profile1")
+def profile1():
+    return render_template("profile1.html")
+
+
+@app.route("/profile2")
+def profile2():
+    return render_template("profile2.html")
+
+
+@app.route("/profile3")
+def profile3():
+    return render_template("profile3.html")\
+
+
+
+@app.route("/profile4")
+def profile4():
+    return render_template("profile4.html")
+
+
+@app.route("/profile5")
+def profile5():
+    return render_template("profile5.html")
+
+
 if __name__ == "__main__" :
     app.run(host='0.0.0.0')
