@@ -139,9 +139,35 @@ def facebook_authorized(resp):
 #     return render_template("verified.html")
 
 
+@app.route("listings1")
+def listings1():
+    return render_template("listings1.html")
+
+
+@app.route("listings2")
+def listings1():
+    return render_template("listings2.html")
+
+
 @app.route("/listings3")
 def listings3():
     return render_template("listings3.html")
+
+
+@app.route("/listings4")
+def listings1():
+    return render_template("listings4.html")
+
+
+@app.route("/listings5")
+def listings1():
+    return render_template("listings5.html")
+
+
+@app.route("listings6")
+def listings1():
+    return render_template("listings6.html")
+
 
 if __name__ == "__main__" :
     app.run(host='0.0.0.0')
