@@ -195,5 +195,15 @@ def profile5():
     return render_template("profile5.html")
 
 
+@app.route("/matches_listings")
+def matches_listings():
+    return render_template("matches_listings.html")
+
+
+@app.route("/matches_profile")
+def matches_profile():
+    return render_template("matches_profile.html")
+
+
 if __name__ == "__main__" :
     app.run(host='0.0.0.0')
