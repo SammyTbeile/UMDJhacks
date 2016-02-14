@@ -139,5 +139,9 @@ def facebook_authorized(resp):
 #     return render_template("verified.html")
 
 
+@app.route("/listings3")
+def listings3():
+    return render_template("listings3.html")
+
 if __name__ == "__main__" :
     app.run(host='0.0.0.0')

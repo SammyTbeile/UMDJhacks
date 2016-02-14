@@ -6,8 +6,8 @@
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet"></link>
 
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
-    <link rel="stylesheet" href="css/main.css"></link>
-    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
     <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
 
   </head>
@@ -48,19 +48,19 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="../images/nyc1.jpg" alt="livingroom" width="360">
+              <img src="{{ url_for('static', filename='img/nyc1.jpg') }}"  alt="livingroom" width="360">
               <div class="carousel-caption">
                 
               </div>
             </div>
             <div class="item" >
-              <img src="../images/nyc2.jpg" alt="bedroom" width="360">
+              <img src="{{ url_for('static', filename='img/nyc2.jpg') }}" alt="bedroom" width="360">
               <div class="carousel-caption">
                 
               </div>
             </div>
             <div class="item">
-              <img src="../images/nyc3.jpg" alt="kitchen" width="360">
+              <img src="{{ url_for('static', filename='img/nyc3.jpg') }}" alt="kitchen" width="360">
               <div class="carousel-caption">
                 
               </div>
