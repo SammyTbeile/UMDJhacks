@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/fancy_buttons')}}"></script>
     <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
 
   </head>
@@ -45,8 +46,8 @@
         <div class="well" style="background-color: #d7e2e0; width: 360">
         <ul style="list-style-type:none">
           <li> <b>Gender:</b> Female</li>
-          <li> <b>Fun Fact</b> I NEED TO LIVE IN DETROIT! PLEASE TAKE ME!!!!</li>
-          <li><b> Max price for rent:</b> $1500/month</li>
+          <li> <b>Fun Fact</b> I NEED TO LIVE IN DETROIT! PLEASE TAKE ME!!!! I'm desperate for a place to live. You don't even need to be that nice.</li>
+          <li><b> Max price for rent:</b> $500/month</li>
           <li><b>SS:</b>Yes.</li>
           <li> <b>SK:</b> Yes. </li>
         </ul>  
@@ -55,6 +56,21 @@
         </div>
 
         </div>
+
+        <div class="row">
+          <div class="container">
+           <div class="row">
+            <div class="col-md-6">
+              <button type="button" onclick="window.location='http://localhost:5000/profile3';" id="notInt" class="btn btn-danger btn-block">Not Interested</button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" onclick="window.location='http://localhost:5000/profile3';" id="Int" class="btn btn-success btn-block">Interested</button>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
         </p>
       </div>
     </div>

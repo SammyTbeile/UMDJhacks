@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/fancy_buttons')}}"></script>
     <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
 
   </head>
@@ -30,7 +29,7 @@
 
     <div class="jumbotron" style="background-color: #cedbd9;padding-top: 0px;">
       <div class="container">
-        <p > <center> <p style = "color: #292b2b"> Apartments in NYC: Listing 2 </p> <br></br></center>
+        <p > <center> <p  style = "color: #292b2b"> Apartments in NYC </p> <br></br></center>
        </div>
 
  <div class="container">
@@ -43,24 +42,24 @@
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+<!--             <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
           </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="{{ url_for('static', filename='img/apt2-1.png') }}" alt="livingroom" width="360">
+              <img src="{{ url_for('static', filename='img/apt1-1.png') }}" alt="livingroom" width="360">
               <div class="carousel-caption">
                 
               </div>
             </div>
             <div class="item" >
-              <img src="{{ url_for('static', filename='img/apt2-2.png') }}" alt="bedroom" width="360">
+              <img src="{{ url_for('static', filename='img/apt1-2.png') }}" alt="bedroom" width="360">
               <div class="carousel-caption">
                 
               </div>
             </div>
-           <!--  <div class="item">
+<!--             <div class="item">
               <img src="{{ url_for('static', filename='img/nyc3.jpg') }}" alt="kitchen" width="360">
               <div class="carousel-caption">
                 
@@ -86,35 +85,18 @@
         <div class= "col-md-4 col-md-offset-2" >
         <div class="well" style="background-color: #d7e2e0; width: 360">
         <ul style="list-style-type:none">
-          <li> <b>Location:</b> Crown Heights</li>
-          <li> <b>Features:</b> Kitchen, 2 bathroom, 4 bedrooms, Dishwasher!</li>
-          <li><b> Rent:</b> $850/month</li>
+          <li> <b>Location:</b> Washington Heights</li>
+          <li> <b>Features:</b> Kitchen, 1 bathroom, 4 bedrooms, AC</li>
+          <li><b> Rent:</b> $650/month</li>
           <li> <b> Whats in it for you:</b> Single bedroom, 2 furniture included</li>
-          <li><b>Observances:</b> Shomer Kashrut.</li>
-          <li> <b> About us:</b> All female. Shomer Kashrut. Desperate for someone to fill our empty spot!</li>
+          <li><b>Observances:</b> Shomer Shabbat, Shomer Kashrut</li>
+          <li> <b> About us:</b> We are 3 women looking to fill a slot for a 4th. </li>
         </ul>  
         </div>
 
         </div>
 
         </div>
-
-        <div class="row">
-          <div class="container">
-           <div class="row">
-            <div class="col-md-6">
-              <button type="button" onclick="window.location='http://localhost:5000/listings3';" id="notInt" class="btn btn-danger btn-block">Not Interested</button>
-            </div>
-            <div class="col-md-6">
-              <button type="button" onclick="window.location='http://localhost:5000/listings3';" id="Int" class="btn btn-success btn-block">Interested</button>
-            </div>
-          </div>
-          </div>
-        </div>
-
-
-
-
         </p>
       </div>
     </div>

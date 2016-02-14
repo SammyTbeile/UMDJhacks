@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/fancy_buttons')}}"></script>
     <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
 
   </head>
@@ -55,6 +56,22 @@
         </div>
 
         </div>
+
+          <div class="row">
+          <div class="container">
+           <div class="row">
+            <div class="col-md-6">
+              <button type="button" onclick="window.location='http://localhost:5000/profile5';" id="notInt" class="btn btn-danger btn-block">Not Interested</button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" onclick="window.location='http://localhost:5000/profile5';" id="Int" class="btn btn-success btn-block">Interested</button>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+
         </p>
       </div>
     </div>

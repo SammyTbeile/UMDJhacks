@@ -1,0 +1,17 @@
+document.onkeydown=function(e){
+	e = e || window.event;
+	switch(e.which || e.keycode){
+		case 37:
+		console.log("Left");
+		var button = document.getElementById("notInt");
+		button.click();
+		break;
+		case 39:
+		console.log("Right");
+		var button = document.getElementById("Int");
+		button.click();
+		break;
+		default:
+		return;
+	}
+}

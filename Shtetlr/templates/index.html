@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html>
 
   <head>
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet"></link>
 
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
+    <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
 
   </head>
 
@@ -13,69 +16,64 @@
     <div class="nav">
       <div class="container">
         <ul class="pull-left">
-          <li><a href="#">Name</a></li>
-          <li><a href="#">Browse</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Matches</a></li>
         </ul>
-        <ul class="pull-right">
+<!--         <ul class="pull-right">
           <li><a href="#">Sign Up</a></li>
           <li><a href="#">Log In</a></li>
           <li><a href="#">Help</a></li>
-        </ul>
-      </div>
+        </ul> -->
+      </div> 
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron" style="background-color: #cedbd9;padding-top: 0px;">
       <div class="container">
-        <h1>Looking to have an empty spot in your apartment filled? Or are you looking to fill a spot in an already existing apartment? We can find you a match!</h1>
-        <!-- <h2>Find a place to stay with us.</h2> -->
-        <p>Rent from yiddin just like you.</p>
-        <a href="#">Learn More</a>
+        <p > <center> <h1  style = "color: #292b2b"> SHTETLR  </h1> <h4> Looking to fill an empty spot in your apt.? Stranded without an apt.? Shtetlr will find your match!</h4><br></br></center>
+       </div>
+
+ <div class="container">
+        <div class="row" >
+        <div class= "col-md-4 col-md-offset-1">
+
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default" style="width:360">Find an apartment!</button>
+
+</div>
+
+        </div>
+
+
+        <div class= "col-md-4 col-md-offset-2" >
+<!-- Large button group -->
+<div class="btn-group">
+  <button class="btn btn-default ">
+    Find a replacement roommate! <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    ...
+  </ul>
+</div>
+
+
+<!-- <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default" style="width:360">Find a replacement roommate!</button>
+
+</div> -->
+
+
+        </div>
+
+        </div>
+        </p>
       </div>
     </div>
-    <div class="neighborhood-guides">
-
-        <h2>Neighborhood Guides</h2>
-        <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
-            <div class="row">
-
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="http://uptowncollective.com/wp-content/uploads/2012/10/Kids-Boxing-Washington-Heights.jpg">
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.ytimg.com/vi/1AAxvmiK7O0/maxresdefault.jpg">
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-                 </div>
-
-            </div>
-        </div>
+  
     </div>
-    <div class="learn-more">
-	  <div class="container">
-		<div class="row">
-	      <div class="col-md-4">
-			<h3>Travel</h3>
-			<p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
-			<p><a href="#">See how to travel on Airbnb</a></p>
-	      </div>
-		  <div class="col-md-4">
-			<h3>Host</h3>
-			<p>Renting out your unused space could pay your bills or fund your next vacation.</p>
-			<p><a href="#">Learn more about hosting</a></p>
-		  </div>
-		  <div class="col-md-4">
-			<h3>Trust and Safety</h3>
-			<p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-			<p><a href="#">Learn about trust at Airbnb</a></p>
-		  </div>
-	    </div>
-	  </div>
-	</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+
   </body>
 </html>

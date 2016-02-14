@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/fancy_buttons')}}"></script>
     <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
 
   </head>
@@ -29,7 +30,7 @@
 
     <div class="jumbotron" style="background-color: #cedbd9;padding-top: 0px;">
       <div class="container">
-        <p > <center> <p style = "color: #292b2b"> Apartments in NYC </p> <br></br></center>
+        <p > <center> <p style = "color: #292b2b"> Apartments in NYC: Listing 4</p> <br></br></center>
        </div>
 
  <div class="container">
@@ -42,7 +43,7 @@
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
           </ol>
 
           <!-- Wrapper for slides -->
@@ -59,12 +60,12 @@
                 
               </div>
             </div>
-            <div class="item">
+            <!-- <div class="item">
               <img src="{{ url_for('static', filename='img/nyc3.jpg') }}" alt="kitchen" width="360">
               <div class="carousel-caption">
                 
               </div>
-            </div>
+            </div> -->
           
           </div>
 
@@ -97,6 +98,21 @@
         </div>
 
         </div>
+
+          <div class="row">
+          <div class="container">
+           <div class="row">
+            <div class="col-md-6">
+              <button type="button" onclick="window.location='http://localhost:5000/listings5';" id="notInt" class="btn btn-danger btn-block">Not Interested</button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" onclick="window.location='http://localhost:5000/listings5';" id="Int" class="btn btn-success btn-block">Interested</button>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
         </p>
       </div>
     </div>
