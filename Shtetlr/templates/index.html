@@ -5,7 +5,7 @@
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
 
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
   </head>
 
@@ -26,8 +26,8 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1>Were You Ditched by a Roommate who Just Got Married?</h1>
-        <h2>Find a place to stay with us.</h2>
+        <h1>Looking to have an empty spot in your apartment filled? Or are you looking to fill a spot in an already existing apartment? We can find you a match!</h1>
+        <!-- <h2>Find a place to stay with us.</h2> -->
         <p>Rent from yiddin just like you.</p>
         <a href="#">Learn More</a>
       </div>
