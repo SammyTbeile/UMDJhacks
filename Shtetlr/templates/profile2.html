@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet"></link>
+
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></link>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
+    <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
+
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Matches</a></li>
+        </ul>
+<!--         <ul class="pull-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Help</a></li>
+        </ul> -->
+      </div> 
+    </div>
+
+    <div class="jumbotron" style="background-color: #cedbd9;padding-top: 0px;">
+      <div class="container">
+        <p > <center> <p> Emily Blady </p> <br></br></center>
+       </div>
+
+ <div class="container">
+        <div class="row" >
+        <div class= "col-md-4 col-md-offset-1">
+
+<img src="{{ url_for('static', filename='img/blady.jpg') }}" alt="fb" width="250">
+
+        </div>
+
+
+        <div class= "col-md-4 col-md-offset-2" >
+        <div class="well" style="background-color: #d7e2e0; width: 360">
+        <ul style="list-style-type:none">
+          <li> <b>Gender:</b> Female</li>
+          <li> <b>Fun Fact</b> I NEED TO LIVE IN DETROIT! PLEASE TAKE ME!!!!</li>
+          <li><b> Max price for rent:</b> $1500/month</li>
+          <li><b>SS:</b>Yes.</li>
+          <li> <b>SK:</b> Yes. </li>
+        </ul>  
+        </div>
+
+        </div>
+
+        </div>
+        </p>
+      </div>
+    </div>
+  
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+
+  </body>
+</html>
