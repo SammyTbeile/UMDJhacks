@@ -6,8 +6,8 @@
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet"></link>
 
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"></link>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}"></link>
+    <link rel="stylesheet" href="css/main.css"></link>
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
     <!-- <link rel="icon" type="image/x-icon" href=favicon.ico /> -->
 
   </head>
@@ -48,19 +48,19 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="{{ url_for('static', filename='img/nyc1.jpg') }}"  alt="livingroom" width="360">
+              <img src="{{ url_for('static', filename='img/apt4-1.png') }}" alt="livingroom" width="360">
               <div class="carousel-caption">
                 
               </div>
             </div>
             <div class="item" >
-              <img src="{{ url_for('static', filename='img/nyc2.jpg') }}" alt="bedroom" width="360">
+              <img src="{{ url_for('static', filename='img/apt4-2.png') }}" alt="bedroom" width="360">
               <div class="carousel-caption">
                 
               </div>
             </div>
             <div class="item">
-              <img src="{{ url_for('static', filename='img/nyc3.jpg') }}" alt="kitchen" width="360">
+              <img src="../images/nyc3.jpg" alt="kitchen" width="360">
               <div class="carousel-caption">
                 
               </div>
@@ -82,17 +82,17 @@
         </div>
 
 
-        <div class= "col-md-4 col-md-offset-2">
-
+        <div class= "col-md-4 col-md-offset-2" >
+        <div class="well" style="background-color: #d7e2e0; width: 360">
         <ul style="list-style-type:none">
-          <li> <b>Location:</b> UWS, 72nd and Broadway</li>
-          <li> <b>Features:</b> Kitchen, 2 full bathrooms, 3 bedrooms</li>
-          <li><b> Rent:</b> $1,200 per month</li>
-          <li> <b> Whats in it for you:</b> Single bedroom, 2 closets, full size bed</li>
-          <li><b>Observances:</b> Traditional Jewish, Ingredient kosher kitchen</li>
-          <li> <b> About us:</b> We are 4 fun loving women looking for a 5th. We enjoy cooking dinner together weekly. Our cat Crookshanks is very friendly.</li>
+          <li> <b>Location:</b> Washington Heights</li>
+          <li> <b>Features:</b> Kitchen, 4 bedrooms, 1 bathroom, Laundry</li>
+          <li><b> Rent:</b> $750/month</li>
+          <li> <b> Whats in it for you:</b> Single bedroom, 1 closet</li>
+          <li><b>Observances:</b> Shomer Kashrut. Shomer shabbat.</li>
+          <li> <b> About us:</b> All male. YU grads looking to find wives. </li>
         </ul>  
-
+        </div>
 
         </div>
 
@@ -104,7 +104,7 @@
     </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 
   </body>
