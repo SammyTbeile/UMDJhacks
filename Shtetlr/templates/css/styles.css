@@ -1,0 +1,272 @@
+@font-face {
+  font-family: ProximaNova;
+  font-weight: normal;
+  src: url("../fonts/Proxima-Nova-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: ProximaNova;
+  font-weight: bold;
+  src: url("../fonts/Proxima-Nova-Semibold.otf") format("opentype"); }
+
+body {
+  font: normal 16px/24px "ProximaNova", "SF", "Helvetica Neue", sans-serif;
+  background: #fff;
+  color: #475254; }
+
+.wrap {
+  width: 100%;
+  overflow: hidden; }
+
+a {
+  color: #43a857;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out; }
+  a:hover {
+    color: #faa41c; }
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden; }
+  @media (max-width: 37.5em) {
+    .container {
+      width: 100%; } }
+
+section {
+  margin: 60px 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box; }
+  section .appstore span {
+    background: url(../images/apple.png) no-repeat 0 center;
+    padding-left: 30px; }
+  section .playstore span {
+    background: url(../images/play.png) no-repeat 0 center;
+    padding-left: 30px; }
+  section.pitch {
+    margin: 0;
+    border-bottom: 1px solid #e1e8e9; }
+    section.pitch .app-icon {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin-bottom: 20px; }
+    section.pitch .column .align {
+      width: 490px;
+      box-sizing: border-box; }
+    section.pitch .column:first-child .align {
+      float: right;
+      padding-top: 60px;
+      padding-right: 60px; }
+    section.pitch .column:last-child .align {
+      float: left; }
+    @media (max-width: 37.5em) {
+      section.pitch .app-icon {
+        margin: 0 auto 20px; }
+      section.pitch .column {
+        text-align: center; }
+        section.pitch .column .app-stores {
+          padding-bottom: 40px; }
+        section.pitch .column:first-child .align {
+          float: none;
+          width: auto;
+          padding: 20px 0 0; }
+          section.pitch .column:first-child .align h1, section.pitch .column:first-child .align h2 {
+            padding-left: 20px;
+            padding-right: 20px; }
+        section.pitch .column:last-child .align {
+          float: none;
+          width: auto;
+          padding: 20px 20px 0; }
+        section.pitch .column h1 {
+          font-size: 2.3em; } }
+    section.pitch .green {
+      background: -webkit-linear-gradient(-20deg, #43a857 0%, #2d9968 100%);
+      background: -moz-linear-gradient(-20deg, #43a857 0%, #2d9968 100%);
+      background: -ms-linear-gradient(-20deg, #43a857 0%, #2d9968 100%);
+      background: -o-linear-gradient(-20deg, #43a857 0%, #2d9968 100%);
+      background: linear-gradient(-20deg, #43a857 0%, #2d9968 100%); }
+      section.pitch .green img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; }
+        section.pitch .green img.powered {
+          margin: 30px auto; }
+        @media (max-width: 37.5em) {
+          section.pitch .green img.screenshot {
+            width: 90%; } }
+    section.pitch h1 {
+      font-size: 3em;
+      line-height: 1.3em; }
+      section.pitch h1 .stripe img {
+        height: 0.9em;
+        vertical-align: middle;
+        display: inline-block;
+        padding-bottom: 1px; }
+    section.pitch h2 {
+      font-size: 1.2em;
+      line-height: 1.4em;
+      opacity: 0.8;
+      padding-top: 20px; }
+    section.pitch .app-stores {
+      padding-top: 20px; }
+      section.pitch .app-stores a {
+        display: inline-block;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background: -webkit-linear-gradient(-20deg, #181c1d 0%, #475254 100%);
+        background: -moz-linear-gradient(-20deg, #181c1d 0%, #475254 100%);
+        background: -ms-linear-gradient(-20deg, #181c1d 0%, #475254 100%);
+        background: -o-linear-gradient(-20deg, #181c1d 0%, #475254 100%);
+        background: linear-gradient(-20deg, #181c1d 0%, #475254 100%); }
+        section.pitch .app-stores a:hover {
+          background: #475254; }
+  section.features {
+    padding: 60px 0; }
+    section.features .tile {
+      display: block;
+      border-radius: 4px;
+      width: 50px;
+      height: 50px;
+      background: -webkit-linear-gradient(-20deg, #faa41c 0%, #fcdb5a 100%);
+      background: -moz-linear-gradient(-20deg, #faa41c 0%, #fcdb5a 100%);
+      background: -ms-linear-gradient(-20deg, #faa41c 0%, #fcdb5a 100%);
+      background: -o-linear-gradient(-20deg, #faa41c 0%, #fcdb5a 100%);
+      background: linear-gradient(-20deg, #faa41c 0%, #fcdb5a 100%); }
+      section.features .tile img {
+        -webkit-transform: scale(50%);
+        -moz-transform: scale(50%);
+        -ms-transform: scale(50%);
+        -o-transform: scale(50%);
+        transform: scale(50%);
+        display: block; }
+    section.features h3 {
+      font-size: 1.3em;
+      padding: 20px 0; }
+    section.features p {
+      opacity: 0.8; }
+    @media (max-width: 37.5em) {
+      section.features {
+        padding: 0 20px; }
+        section.features .column {
+          padding-bottom: 40px; } }
+  section.logos {
+    background: #fcfdfd;
+    border-top: 1px solid #e1e8e9;
+    border-bottom: 1px solid #e1e8e9;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 0; }
+    section.logos img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; }
+    @media (max-width: 37.5em) {
+      section.logos {
+        display: none; } }
+  section.hands {
+    margin: 0;
+    width: 100%;
+    display: block; }
+    section.hands img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto; }
+  section.stats .stroked {
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #43a857;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px; }
+  section.stats h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 40px 0 20px 0; }
+  section.stats h3 {
+    text-align: center;
+    padding-bottom: 60px;
+    opacity: 0.8;
+    font-size: 1.2em; }
+  section.stats .stat {
+    border: 1px solid #e1e8e9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 60px 0; }
+    section.stats .stat strong {
+      display: block;
+      color: #43a857;
+      font-size: 3em;
+      line-height: 1.5em; }
+    section.stats .stat p {
+      opacity: 0.8; }
+  @media (max-width: 37.5em) {
+    section.stats {
+      padding: 0 20px; }
+      section.stats .stat {
+        margin-bottom: 20px; } }
+  section.dark {
+    background: -webkit-linear-gradient(160deg, #181c1d 0%, #475254 100%);
+    background: -moz-linear-gradient(160deg, #181c1d 0%, #475254 100%);
+    background: -ms-linear-gradient(160deg, #181c1d 0%, #475254 100%);
+    background: -o-linear-gradient(160deg, #181c1d 0%, #475254 100%);
+    background: linear-gradient(160deg, #181c1d 0%, #475254 100%);
+    color: #fff;
+    padding: 60px 0;
+    margin-bottom: 0; }
+    section.dark .cta {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 60px; }
+      @media (max-width: 37.5em) {
+        section.dark .cta {
+          text-align: center; } }
+      section.dark .cta h1 {
+        font-size: 2em;
+        line-height: 1.4em; }
+      section.dark .cta .app-stores {
+        padding-top: 20px; }
+      section.dark .cta a {
+        display: inline-block;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background: -webkit-linear-gradient(160deg, #43a857 0%, #2d9968 100%);
+        background: -moz-linear-gradient(160deg, #43a857 0%, #2d9968 100%);
+        background: -ms-linear-gradient(160deg, #43a857 0%, #2d9968 100%);
+        background: -o-linear-gradient(160deg, #43a857 0%, #2d9968 100%);
+        background: linear-gradient(160deg, #43a857 0%, #2d9968 100%); }
+        section.dark .cta a:hover {
+          background: #2d9968; }
+    section.dark h6 {
+      padding-top: 60px;
+      color: #2d9968;
+      font-weight: 500; }
+      @media (max-width: 37.5em) {
+        section.dark h6 {
+          padding-left: 20px; } }
+    section.dark .faq {
+      padding-top: 30px; }
+      @media (max-width: 37.5em) {
+        section.dark .faq {
+          padding: 20px; } }
+      section.dark .faq h5 {
+        font-weight: 600;
+        font-size: 1.1em; }
+      section.dark .faq p {
+        opacity: 0.8;
+        padding-top: 10px;
+        padding-bottom: 40px; }
+    section.dark footer {
+      padding-top: 120px;
+      text-align: center; }
+      section.dark footer p {
+        padding-bottom: 10px;
+        font-size: 0.9em;
+        color: rgba(255, 255, 255, 0.5); }
